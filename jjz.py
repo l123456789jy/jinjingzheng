@@ -36,7 +36,7 @@ class Message:
             'text': self.text,
             'desp': desp
         }
-        r = requests.post(self.push_url, data=push_data)
+        r = requests.post(self.push_url, data=push_data, verify=False)
         # print r.text
 
     # 获取当前已经提醒了几次, 如果大于3次了, 今天不再提醒
