@@ -116,7 +116,7 @@ now = time.strftime('%H点%M分', time.localtime())
 if res:
     print '可以办理'
     # 默认每日只提醒3次
-    msg.push('%s 可以办理进京证啦~' % str(now))
+    msg.push('%s 可以办理进京证啦~![](http://ww1.sinaimg.cn/large/9f723435ly1fm71yqf6mbj20u00u00ti.jpg)' % str(now))
     # msg.push('可以办理进京证啦~', 4)
 else:
     print '不能办理'
